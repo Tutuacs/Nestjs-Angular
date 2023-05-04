@@ -1,181 +1,83 @@
-.nav-bar{
-    display: flex;
-    justify-content: space-between;
-    padding: 1em;
-    background-color: #dec129;
+.collection-header {
+  font-weight: 600;
+  font-size: 2rem;
+  text-align: center;
 }
 
-.header{
-    cursor: pointer;
-    font-family: 'Roboto Condensed', sans-serif;
-    justify-content: space-around;
-    text-align: center;
-    margin-top: -7em;
+.header {
+  margin-top: 1rem;
+
 }
 
-.collection-header{
-    font-family: 'Monoton', cursive;
-    font-weight: 300;
-    font-size: 4rem;
-    animation: Color 8s linear infinite;
-    -webkit-animation: Color 8s ease-in-out infinite;
-}
-
-.banner{
+.banner {
   max-width: 100%;
-  animation: Color 8s linear infinite;
-  -webkit-animation: Color 8s ease-in-out infinite;
-  border-bottom: 2px solid;
 }
 
-.btn-container{
-    margin-top: 2.5em;
-    display: flex;
-    justify-content: center;
+.btn-container {
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 1rem;
+  margin-left: 1rem;
 }
 
-.btn{
-    cursor: pointer;
-    border-radius: 10px;
-    padding: .3em;
-    margin-right: 5%;
-    color: #FFFFFF;
-    /* color: rgba(50, 50, 50); */
-    font-weight: 400;
-    transition: .4s;
+.btn {
+  font-weight: 700;
+  color: rgb(154, 152, 152);
 }
 
-.btn:hover{
-    background-color: #dec129;
-    color: rgba(50, 50, 50);
-    /* color: #FFFFFF; */
+.btn:hover {
+  color: black;
+  cursor: pointer;
 }
 
-.product-list-container{
-    margin-top: 3rem;
-    display: flex;
-    flex-wrap: wrap;
-
-    justify-content: center;
+.product-list-container {
+  margin-top: 3rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
-.product-list{
-    cursor: pointer;
-    border-radius: 15px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    margin: 1rem;
-    height: 300px;
-    width: 300px;
-    background-color: rgba(255, 255, 255, 0.8);
-    transition: .4s;
-    /* background-color: rgba(0, 0, 0, 0.1); */
-}
-
-.product-list:hover{
+.product-list {
+  justify-content: center;
+  text-align: center;
+  cursor: pointer;
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 1rem;
+  height: 300px;
+  width: 300px;
   background-color: rgba(50, 50, 50);
-  color: rgba(255, 255, 255, 0.8);
+  color: #ffffff;
+  transition: 0.4s;
+  /* background-color: rgba(0, 0, 0, 0.1); */
+}
+
+.product-list:hover {
+  background-color: rgba(255, 255, 255, 0.8);
+  color: rgba(0, 0, 0);
   border: solid 1px;
 }
 
-.product-alt-img{
-    margin-top: 1rem;
-    margin-left: auto;
-    margin-right: auto;
-    width: 150px;
+.product-alt-img {
+  margin-top: 1rem;
+  margin-left: auto;
+  margin-right: auto;
+  width: 150px;
 }
 
-.product-min-img{
-    margin-top: 2rem;
-    margin-left: auto;
-    margin-right: auto;
-    width: 170px;
+.product-min-img {
+  margin-top: 2rem;
+  margin-left: auto;
+  margin-right: auto;
+  width: 170px;
 }
 
-.product-list-text{
-    justify-content:last baseline;
-    margin-right: auto;
-    margin-left: auto;
-    margin-top: auto;
-    margin-bottom: 1rem;
+.product-list-text {
+  justify-content: last baseline;
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: auto;
+  margin-bottom: 1rem;
 }
-
-
-@keyframes Color{
-    0%{
-      color:#A0D468;
-    }
-    
-    20%{
-      color:#4FC1E9;
-    }
-    
-    40%{
-      color:#FFCE54;
-    }
-    
-    60%{
-      color:#FC6E51;
-    }
-    
-    80%{
-      color:#ED5565;
-    }
-    
-    100%{
-      color:#AC92EC;
-    }
-  }
-  
-  @-moz-keyframes Color{
-    0%{
-      color:#A0D468;
-    }
-    
-    20%{
-      color:#4FC1E9;
-    }
-    
-    40%{
-      color:#FFCE54;
-    }
-    
-    60%{
-      color:#FC6E51;
-    }
-    
-    80%{
-      color:#ED5565;
-    }
-    
-    100%{
-      color:#AC92EC;
-    }
-  }
-  
-  @-webkit-keyframes Color{
-    0%{
-      color:#A0D468;
-    }
-    
-    20%{
-      color:#4FC1E9;
-    }
-    
-    40%{
-      color:#FFCE54;
-    }
-    
-    60%{
-      color:#FC6E51;
-    }
-    
-    80%{
-      color:#ED5565;
-    }
-    
-    100%{
-      color:#AC92EC;
-    }
-  }

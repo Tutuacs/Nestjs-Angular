@@ -1,9 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { ProductService } from '../../product.service';
-import { async } from 'rxjs/internal/scheduler/async';
-
-declare var valores:any;
 
 @Component({
   selector: 'app-product-details',
