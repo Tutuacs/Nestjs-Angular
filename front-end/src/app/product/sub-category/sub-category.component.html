@@ -1,0 +1,32 @@
+<div class="nav-bar">
+    <div class="nav-bar-menu">
+        <i class='bx bx-menu bx-sm'></i>
+    </div>
+    <div class="nav-bar-logo">
+        <h2 [routerLink]="['/product']"><a>LOGO</a></h2>
+    </div>
+    <div class="nav-bar-cart">
+        <i class='bx bx-cart bx-sm'></i>
+    </div>
+</div>
+<div>
+    <img class="banner"
+        src="https://ik.imagekit.io/ms08rtwspk/NestJs___Angular/Bags/banner-dark_W5uq7Dv5o.jpg?updatedAt=1682615248069"
+        alt="">
+</div>
+<div class="header">
+    <h1 class="collection-header">Bags</h1>
+</div>
+<div class="btn-container">
+    <h3 class="btn">{{ routeName }}</h3>
+</div>
+<div class="product-list-container">
+    <div *ngFor="let product of subCategory">
+        <div class="product-list" [routerLink]="['/details',product.id]">
+            <img class="product-min-img" src="{{product.img1}}">
+            <h5 class="product-list-text">{{ product.title }} </h5>
+            <h5 class="product-list-text">R${{ product.price }} </h5>
+            <!-- <img src="https://ik.imagekit.io/ms08rtwspk/NestJs___Angular/bag-logo-removebg-preview.png?updatedAt=1682600684073" alt=""> -->
+        </div>
+    </div>
+</div>

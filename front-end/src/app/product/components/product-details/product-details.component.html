@@ -1,0 +1,38 @@
+<div class="nav-bar">
+    <div class="nav-bar-menu">
+        <i class='bx bx-menu bx-sm'></i>
+    </div>
+    <div class="nav-bar-logo">
+        <h2 [routerLink]="['/']"><a>LOGO</a></h2>
+    </div>
+    <div class="nav-bar-cart">
+        <i class='bx bx-cart bx-sm'></i>
+    </div>
+</div>
+<div>
+    <img class="banner"
+        src="https://ik.imagekit.io/ms08rtwspk/NestJs___Angular/Bags/banner-dark_W5uq7Dv5o.jpg?updatedAt=1682615248069"
+        alt="">
+</div>
+<div *ngIf="product">
+    <div class="header">
+        <h1 class="collection-header"> {{product.title}} </h1>
+    </div>
+    <div class="product-list-container">
+        <div class="product-list">
+            <img class="product-min-img" src="{{product.img1}}">
+            <h5 class="product-list-text">R$ {{product.price}}</h5>
+        </div>
+    </div>
+    <div class="product-info">
+        <div class="product-title">
+            <h4>{{product.title}}</h4>
+        </div>
+        <div class="product-description">
+            <p>{{product.description}} </p>
+        </div>
+    </div>
+</div>
+<div class="paypal-btn">
+    <div id="paypalRef"></div>
+</div>

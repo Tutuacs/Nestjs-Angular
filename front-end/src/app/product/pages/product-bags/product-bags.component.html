@@ -1,0 +1,53 @@
+<div class="nav-bar">
+    <div class="nav-bar-menu">
+        <i class='bx bx-menu bx-sm'></i>
+    </div>
+    <div class="nav-bar-logo">
+        <h2 [routerLink]="['/product']"><a>LOGO</a></h2>
+    </div>
+    <div class="nav-bar-cart">
+        <i class='bx bx-cart bx-sm'></i>
+    </div>
+</div>
+<div>
+    <img class="banner"
+        src="https://ik.imagekit.io/ms08rtwspk/NestJs___Angular/Bags/banner-dark_W5uq7Dv5o.jpg?updatedAt=1682615248069"
+        alt="">
+</div>
+<div class="header">
+    <h1 class="collection-header">Bags</h1>
+</div>
+<div class="btn-container">
+    <h3 class="btn">Purses</h3>
+    <h3 class="btn">Dsigner Bags</h3>
+    <h3 class="btn">Shoulder bags</h3>
+    <h3 class="btn">Travel bags</h3>
+</div>
+
+<div class="product-list-container">
+    <div class="product-list" [routerLink]="['purses']">
+        <img class="product-alt-img"
+            src="https://ik.imagekit.io/ms08rtwspk/NestJs___Angular/Bags/purse-removebg-preview_Dg2F0Tc4V.png?updatedAt=1682615264218"
+            alt="">
+        <h5 class="product-list-text">Purses</h5>
+        <!-- <img src="https://ik.imagekit.io/ms08rtwspk/NestJs___Angular/bag-logo-removebg-preview.png?updatedAt=1682600684073" alt=""> -->
+    </div>
+    <div class="product-list" [routerLink]="['designer bags']">
+        <img class="product-min-img"
+            src="https://ik.imagekit.io/ms08rtwspk/NestJs___Angular/Bags/bag-logo-removebg-preview.png?updatedAt=1682615294400"
+            alt="">
+        <h5 class="product-list-text">Dsigner Bags</h5>
+    </div>
+    <div class="product-list" [routerLink]="['shoulder bags']">
+        <img class="product-alt-img"
+            src="https://ik.imagekit.io/ms08rtwspk/NestJs___Angular/Bags/201868254-1-black_2b00csX-_-removebg-preview.png?updatedAt=1682615602973"
+            alt="">
+        <h5 class="product-list-text">Shoulder bags</h5>
+    </div>
+    <div class="product-list"[routerLink]="['travel bags']">
+        <img class="product-min-img"
+            src="https://ik.imagekit.io/ms08rtwspk/NestJs___Angular/Bags/202649543-1-pink-removebg-preview_VSV6qfVeQ.png?updatedAt=1682615265785"
+            alt="">
+        <h5 class="product-list-text">Travel bags</h5>
+    </div>
+</div>
