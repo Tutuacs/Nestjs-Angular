@@ -3,7 +3,7 @@
         <i class='bx bx-menu bx-sm'></i>
     </div>
     <div class="nav-bar-logo">
-        <h2 [routerLink]="['/product']"><a>LOGO</a></h2>
+        <h2 [routerLink]="['/']"><a>LOGO</a></h2>
     </div>
     <div class="nav-bar-cart">
         <i class='bx bx-cart bx-sm'></i>
@@ -20,13 +20,21 @@
 <div class="btn-container">
     <h3 class="btn">{{ routeName }}</h3>
 </div>
-<div class="product-list-container">
-    <div *ngFor="let product of subCategory">
-        <div class="product-list" [routerLink]="['/details',product.id]">
-            <img class="product-min-img" src="{{product.img1}}">
-            <h5 class="product-list-text">{{ product.title }} </h5>
-            <h5 class="product-list-text">R${{ product.price }} </h5>
-            <!-- <img src="https://ik.imagekit.io/ms08rtwspk/NestJs___Angular/bag-logo-removebg-preview.png?updatedAt=1682600684073" alt=""> -->
+<div class="content-container">
+    <div class="bestseller-container">
+        <h3 class="collection-title"> Best seller this week</h3>
+        <img class="best-img" src="https://i.pinimg.com/736x/2a/1d/b1/2a1db17377fe073a0a2c625dabef829a.jpg" alt="">
+        <h5 class="best-seller-title"></h5>
+        <h5 class="best-seller-price">R$39,99</h5>
+    </div>
+    <div class="product-list-container">
+        <div *ngFor="let product of subCategory">
+            <div class="product-list" [routerLink]="['/details',product.id]">
+                <img class="product-min-img" src="{{product.img1}}">
+                <h5 class="product-list-text">{{ product.title }} </h5>
+                <h5 class="product-list-text">R${{ product.price }} </h5>
+                <!-- <img src="https://ik.imagekit.io/ms08rtwspk/NestJs___Angular/bag-logo-removebg-preview.png?updatedAt=1682600684073" alt=""> -->
+            </div>
         </div>
     </div>
 </div>

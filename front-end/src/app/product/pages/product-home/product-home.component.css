@@ -89,3 +89,32 @@
   margin-top: auto;
   margin-bottom: 1rem;
 }
+
+@media screen and(min-width:768px){
+
+  .land-img{
+    margin: 2.5rem 0 0 1rem;
+  }
+
+  .btn-container{
+    display: none;
+  }
+
+  .lang-img-container{
+    grid-area: left;
+  }
+
+  .product-list-container{
+    grid-area: rigth;
+  }
+
+  .desktop-view{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    grid-template-areas: 
+    "left rigth"
+    "left rigth";
+  }
+
+}

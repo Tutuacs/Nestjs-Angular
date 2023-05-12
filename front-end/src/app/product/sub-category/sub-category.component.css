@@ -82,3 +82,48 @@
   margin-top: auto;
   margin-bottom: 1rem;
 }
+
+.best-seller-container{
+  display: none;
+}
+
+/* Desktop Adjustments */
+
+@media screen and (min-width:768) {
+
+  .best-seller-container{
+    grid-area: left;
+    display: block;
+    margin-left: 1.5rem;
+  }
+
+  .product-list-container{
+    grid-area: right;
+    margin-top: 2.7rem;
+  }
+
+  .content-container{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: auto;
+    grid-template-areas: 
+    "left right"
+    "left right";
+  }  
+
+  .collection-title{
+    font-size: 1rem;
+    margin: 1rem 0;
+  }
+
+  .best-seller-title{
+    font-size: 400;
+    margin: .5rem 0;
+    font-weight: 500;
+  }
+
+  .best-seller-price{
+    text-align: center;
+  }
+
+}

@@ -3,15 +3,26 @@
         <i class='bx bx-menu bx-sm'></i>
     </div>
     <div class="nav-bar-logo">
-        <h2 [routerLink]="['product']">LOGO</h2>
+        <h2 [routerLink]="['/']">LOGO</h2>
     </div>
     <div class="nav-bar-cart">
         <i class='bx bx-cart bx-sm'></i>
     </div>
 </div>
-<div class="header">
-    <h1 class="collection-header">New collection for Spring 2023</h1>
+
+<div class="header" href="">
+    <h2 class="collection-header">New collection <br> Spring 2023</h2>
+    <a href="#product-list-container" style="color:black;">
+        <i class='bx bxs-chevron-down-circle bx-lg'></i>
+    </a>
 </div>
+
+<div class="lang-img-container">
+    <img class="land-img"
+        src="https://ik.imagekit.io/bprw8mk45/products/Screen_Shot_2022-06-01_at_1.04.22_AM_lU5uC-XyW.png?ik-sdk-version=javascript-1.4.3&updatedAt=1654017473198"
+        alt="">
+</div>
+
 <div class="btn-container">
     <h3 class="btn">Acessories</h3>
     <h3 class="btn">Bags</h3>
@@ -19,7 +30,7 @@
     <h3 class="btn">Makeup</h3>
 </div>
 
-<div class="product-list-container">
+<div class="product-list-container" id="product-list-container">
     <div class="product-list" [routerLink]="['acessories']">
             <img class="product-alt-img"
             src="https://ik.imagekit.io/ms08rtwspk/NestJs___Angular/asessories-logo-removebg-preview.png?updatedAt=1682602807388"
